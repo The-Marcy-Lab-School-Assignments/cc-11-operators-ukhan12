@@ -16,6 +16,12 @@ areBothSame(true, 1) // returns true
 areBothSame("2", 2) // returns true
 areBothSame("5", 2) // returns false
 ```
+parameters: num1, num2
+define if else statement 
+if num1 == num2
+    return true 
+else
+    false
 
 2. Write a function named `areBothEqual`, that takes in two arguments and returns true if both arguments are the same in data type and value, and returns false if they are not.
 ```
@@ -24,12 +30,23 @@ areAllFourEqual("2", 2) // returns false
 areAllFourEqual(true, 1) // returns false 
 areAllFourEqual(7, 7) // returns true  
 ```
+parameters: num1, num2
+define if else statement 
+if num1 === num2
+    return true 
+else
+    false
 
 3. Write a function named `areAllFourEqual`, that takes in four arguments and returns true if all four arguments are the same in data type and value, and returns false if it is not. 
 ```
 areAllFourEqual("2", "2", "2", "2") // returns true
 areAllFourEqual("2", "2", "2", 2) // returns false 
 ```
+parameters: num1, num2, num3, num4
+if num1 === num2 and num1 === num3 && num1 === num4
+    return true
+else
+    return false
 
 4. Write a function named `areAllFourSame`, that takes in four arguments and returns true if all four arguments are the same in value, and returns false if it is not. 
 ``` 
@@ -37,6 +54,12 @@ areAllFourSame("2", "2", "2", "2") // returns true
 areAllFourSame("2", "2", "2", 2) // returns true 
 areAllFourSame(true, true, 1, "1") // returns true
 ```
+parameters: num1, num2, num3, num4
+if num1 == num2 and num1 == num2 and num1 == num3
+    return true
+else
+    return false
+
 **BONUS**
 5. Write a function named `areAllFourSameOrEqual`, that takes in four arguments and returns the string "same" if all four arguments are the same in value, but not data type, and returns the string "equal" if all four arguments are equal in value **and** data type. The function will return null if the arguments are not "same" or "equal".
 ```
@@ -44,3 +67,10 @@ areAllFourSame("2", "2", "2", "2") // returns "equal"
 areAllFourSame(true, true, 1, "1") // returns "same"
 areAllFourSame(true, false, 1, "1") // returns null
 ```
+parameters: num1, num2, num3, num4
+if num1 === num2 and num1 === num3 and num1 === num3
+    return "equal"
+else if num1 == num2 && num1 == num3 && num1 == num4
+    return "same"
+else
+    return null
